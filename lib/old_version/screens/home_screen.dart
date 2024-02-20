@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -15,6 +17,7 @@ import '../widgets/clock_widget.dart';
 import '../widgets/custom_painter0.dart';
 import 'login_screen_old.dart';
 
+// ignore: must_be_immutable
 class HomeScreen extends StatefulWidget {
   final userData;
   bool isNewUser;
