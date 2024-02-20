@@ -7,8 +7,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:notes_umk/repositories/repository.dart';
 
+import '../repositories/repository.dart';
 import '../widgets/add_files_screen/add_files_button_widget.dart';
 import '../widgets/add_files_screen/choose_group_widget.dart';
 import '../widgets/add_files_screen/no_groups_to_choose_widget.dart';

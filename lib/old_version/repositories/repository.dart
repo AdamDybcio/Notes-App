@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 class Repository {
   Future listGroups(String? removeGroupId, List allGroupsList,
       List allGroupsIdsList, List allOwnersList, List allOwnersIdsList) async {
-    String? removeId = removeGroupId;
     allGroupsList.clear();
     allGroupsIdsList.clear();
     allOwnersIdsList.clear();

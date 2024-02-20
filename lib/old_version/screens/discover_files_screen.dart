@@ -5,8 +5,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:notes_umk/repositories/repository.dart';
 
+import '../repositories/repository.dart';
 import '../widgets/custom_painter0.dart';
 
 class DiscoverFilesScreen extends StatefulWidget {
