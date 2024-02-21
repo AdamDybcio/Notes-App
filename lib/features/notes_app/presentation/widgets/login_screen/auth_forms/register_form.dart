@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:notes_umk/old_version/screens/home_screen.dart';
 
-import '../../../../../core/themes/theme.dart';
-import '../../bloc/cubit/auth_cubit.dart';
+import '../../../../../../core/themes/theme.dart';
+import '../../../bloc/cubit/auth_form_cubit.dart';
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({
+class RegisterForm extends StatelessWidget {
+  const RegisterForm({
     super.key,
     required this.authCubit,
   });
@@ -33,19 +32,23 @@ class LoginForm extends StatelessWidget {
           obscureText: true,
         ),
         const SizedBox(height: 16.0),
+        const TextField(
+          decoration: InputDecoration(
+            labelText: 'Repeat password',
+            border: OutlineInputBorder(),
+          ),
+          obscureText: true,
+        ),
+        const SizedBox(height: 16.0),
         ElevatedButton(
           onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => HomeScreen(false),
-              ),
-            );
+            // Implementuj logikę logowania/rejestracji
           },
           style: ElevatedButton.styleFrom(
             foregroundColor: AppTheme.buttonText,
             backgroundColor: AppTheme.buttonColor,
           ),
-          child: const Text('Sign In'),
+          child: const Text('Create an acccount'),
         ),
         const SizedBox(height: 8.0),
         TextButton(
@@ -53,7 +56,7 @@ class LoginForm extends StatelessWidget {
             authCubit.changeForm();
           },
           child: const Text(
-            'Don\'t have an account? Sign up',
+            'Have an account? Sign in',
             style: TextStyle(color: AppTheme.buttonColor),
           ),
         ),

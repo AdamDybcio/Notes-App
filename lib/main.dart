@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_umk/features/notes_app/presentation/bloc/cubit/auth_cubit.dart';
+import 'package:notes_umk/features/notes_app/presentation/bloc/cubit/auth_form_cubit.dart';
 
 import 'features/notes_app/presentation/pages/login_screen.dart';
 
@@ -27,8 +27,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Notes Storage',
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primarySwatch: Colors.purple,
           useMaterial3: true,
+          fontFamily: 'Alegreya-Sans',
         ),
         home: const LoginScreen(),
       ),

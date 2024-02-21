@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'auth_state.dart';
+part 'auth_form_state.dart';
 
-class AuthCubit extends Cubit<AuthState> {
+class AuthCubit extends Cubit<AuthFormState> {
   AuthCubit() : super(AuthLoginForm());
 
   void changeForm() {
